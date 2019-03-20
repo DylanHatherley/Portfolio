@@ -1,0 +1,151 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    background-color: rgb(17, 17, 17);
+    color: rgb(204, 204, 204);
+}
+
+img {
+    max-width: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-image: url("../img/sidebar-background.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+header {
+    border-bottom: 0.1em solid #2d3c49;
+    margin: 1em;
+    margin-top: 3em;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+#logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+#header-title {
+    text-align: center;
+    font-size: 1em;
+}
+
+nav {
+    margin-top: 7em;
+    text-align: center;
+}
+
+.nav-links {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.nav-links:hover {
+    font-size: 1.8em;
+}
+
+main {
+    margin-left: 22%;
+    color: rgb(186, 186, 186);
+}
+
+#main-img {
+    width: 90%;
+    height: auto;
+    margin: 2em;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#projects-title {
+    border-bottom: 0.1em solid #2d3c49;
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+article {
+    border-top: 2em;
+    padding: 2em;
+}
+
+.project-preview {
+    width: 20em;
+    height: 15em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+@media (max-width:800px) {
+    #sidebar {
+        position: unset;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.342);
+    }
+    header {
+        margin: 0px;
+        margin-top: 0px;
+        border-bottom: none;
+        background-color: unset;
+    }
+    #logo {
+        position: absolute;
+        margin-left: 0.5em;
+        width: 20%;
+        text-align: left;
+        font-size: 3em;
+    }
+    #header-title {
+        margin-left: 20%;
+        text-align: right;
+    }
+    nav {
+        margin-top: 1em;
+        margin-left: 0em;
+        text-align: center;
+        border-bottom: 0.1em solid #2d3c49;
+        padding-bottom: 1em;
+    }
+    .nav-links {
+        display: unset;
+        font-size: 1.2em;
+    }
+    .nav-links:hover {
+        font-size: 1.2em;
+    }
+    main {
+        margin: 0%;
+    }
+    #main-img {
+        padding: 1em;
+        margin: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-preview {
+        width: 80%;
+        height: auto;
+    }    
+    #projects-title {
+        margin-left: 1em;
+    }
+}
